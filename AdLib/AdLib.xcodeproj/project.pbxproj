@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0437BB7118B307B0000BFE76 /* Pinyou.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 0437BB7018B307B0000BFE76 /* Pinyou.h */; };
+		0437BB9118B30806000BFE76 /* Pinyou.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437BB7218B307B0000BFE76 /* Pinyou.m */; };
+		0441E19C18BF37890008025D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0441E19B18BF37890008025D /* ImageIO.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		0441E1A118BF38110008025D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0441E19D18BF37DA0008025D /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		044E7F2E1915DD8B00370756 /* PYInterstitialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E7F2D1915DD8B00370756 /* PYInterstitialView.m */; };
+		044E7F301915E2D400370756 /* PYInterstitialView.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 044E7F2C1915DD8B00370756 /* PYInterstitialView.h */; };
+		044E7F311915E2D400370756 /* PYInterstitialViewDelegate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 044E7F2F1915E2AD00370756 /* PYInterstitialViewDelegate.h */; };
+		046FEC7418BC3B2F00106E19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046FEC7318BC3B2F00106E19 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		04C1597818C056480067F94C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C1597718C056480067F94C /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		04C1597A18C061180067F94C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C1597918C061180067F94C /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		04C3A1C318EE46B2007DD4C1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3A1C218EE46B2007DD4C1 /* libz.dylib */; };
+		04C3A1C718EE46D8007DD4C1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3A1C618EE46D8007DD4C1 /* CFNetwork.framework */; };
+		04C3A1C918EE46ED007DD4C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3A1C818EE46ED007DD4C1 /* MobileCoreServices.framework */; };
+		04C3A1CE18EE4CC1007DD4C1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3A1C418EE46CC007DD4C1 /* libsqlite3.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		04C4EB1C18D1576A0033F2B7 /* Pinyou.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = 041F488818CFEED2006AF85F /* Pinyou.bundle */; };
+		04D04E2718BEEC2900430FEA /* PYJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D04E2218BEEC2900430FEA /* PYJSONSerializer.m */; };
+		04D04E3718BF21CF00430FEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D04E3618BF21CF00430FEA /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		04D2C75D18F77FDD0036C159 /* PYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C73D18F77FDD0036C159 /* PYBannerView.m */; };
+		04D2C75E18F77FDD0036C159 /* PYAdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C74218F77FDD0036C159 /* PYAdRequest.m */; };
+		04D2C75F18F77FDD0036C159 /* PYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C74418F77FDD0036C159 /* PYModel.m */; };
+		04D2C76018F77FDD0036C159 /* PYModelRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C74618F77FDD0036C159 /* PYModelRequest.m */; };
+		04D2C76518F77FDD0036C159 /* PYAdUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C75218F77FDD0036C159 /* PYAdUtility.m */; };
+		04D2C76618F77FDD0036C159 /* PYAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C75418F77FDD0036C159 /* PYAppManager.m */; };
+		04D2C76718F77FDD0036C159 /* PYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C75618F77FDD0036C159 /* PYImageManager.m */; };
+		04D2C76818F77FDD0036C159 /* PYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C75818F77FDD0036C159 /* PYLocationManager.m */; };
+		04D2C76918F77FDD0036C159 /* PYOfflineSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C75A18F77FDD0036C159 /* PYOfflineSyncManager.m */; };
+		04D2C76A18F77FDD0036C159 /* PYProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2C75C18F77FDD0036C159 /* PYProcess.m */; };
+		04D2C76B18F77FFB0036C159 /* PYBannerView.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 04D2C73C18F77FDD0036C159 /* PYBannerView.h */; };
+		04D2C76C18F77FFB0036C159 /* PYBannerViewDelegate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 04D2C73E18F77FDD0036C159 /* PYBannerViewDelegate.h */; };
+		04D7BFCE18D929410038F784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D7BFCD18D929410038F784 /* Foundation.framework */; };
+		04D7BFD018D92B370038F784 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D7BFCF18D92B370038F784 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		690152761A7F1805003F030E /* PYJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D04E2018BEEC2900430FEA /* PYJSONDeserializer.m */; };
+		69EFE9241ABC0C7300942253 /* PYAVPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EFE9221ABC0C7300942253 /* PYAVPlayerView.h */; };
+		69EFE9251ABC0C7300942253 /* PYAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EFE9231ABC0C7300942253 /* PYAVPlayerView.m */; };
+		953756AD192F5474000B0137 /* PYAdRequest.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 04D2C74118F77FDD0036C159 /* PYAdRequest.h */; };
+		95BD3F211937453700FD2BD4 /* PYStartupView.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 95C185F71936FA2D00D27231 /* PYStartupView.h */; };
+		95BD3F221937453700FD2BD4 /* PYStartupViewDelegate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 95C185FD1937005E00D27231 /* PYStartupViewDelegate.h */; };
+		95C185F91936FA2D00D27231 /* PYStartupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C185F81936FA2D00D27231 /* PYStartupView.m */; };
+		95CE128C192DE4BE00E32AE5 /* AppInfoCollect.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CE128B192DE4BE00E32AE5 /* AppInfoCollect.m */; };
+		95DB50E218FE5F6200D7EADF /* PYConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB50E118FE5F6200D7EADF /* PYConversion.m */; };
+		EFDFC7DC19C18639005AB493 /* OpenFingerPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = EFDFC7DA19C18639005AB493 /* OpenFingerPrint.h */; };
+		EFDFC7DD19C18639005AB493 /* OpenFingerPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDFC7DB19C18639005AB493 /* OpenFingerPrint.m */; };
+		EFF9326C1ADFA9B300DCC10E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF9326B1ADFA9B300DCC10E /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0437BB6618B307B0000BFE76 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				95BD3F211937453700FD2BD4 /* PYStartupView.h in Copy Files */,
+				95BD3F221937453700FD2BD4 /* PYStartupViewDelegate.h in Copy Files */,
+				953756AD192F5474000B0137 /* PYAdRequest.h in Copy Files */,
+				04D2C76B18F77FFB0036C159 /* PYBannerView.h in Copy Files */,
+				04D2C76C18F77FFB0036C159 /* PYBannerViewDelegate.h in Copy Files */,
+				044E7F301915E2D400370756 /* PYInterstitialView.h in Copy Files */,
+				044E7F311915E2D400370756 /* PYInterstitialViewDelegate.h in Copy Files */,
+				04C4EB1C18D1576A0033F2B7 /* Pinyou.bundle in Copy Files */,
+				0437BB7118B307B0000BFE76 /* Pinyou.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		041F488818CFEED2006AF85F /* Pinyou.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyou.bundle; sourceTree = "<group>"; };
+		041F489118CFF310006AF85F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		041F489518CFF310006AF85F /* Pinyou-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pinyou-Info.plist"; sourceTree = "<group>"; };
+		041F489718CFF310006AF85F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041F489918CFF310006AF85F /* Pinyou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pinyou-Prefix.pch"; sourceTree = "<group>"; };
+		0437BB6818B307B0000BFE76 /* libPinyou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPinyou.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0437BB6F18B307B0000BFE76 /* AdLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdLib-Prefix.pch"; sourceTree = "<group>"; };
+		0437BB7018B307B0000BFE76 /* Pinyou.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pinyou.h; sourceTree = "<group>"; };
+		0437BB7218B307B0000BFE76 /* Pinyou.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pinyou.m; sourceTree = "<group>"; };
+		0437BB7918B307B0000BFE76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0437BB7C18B307B0000BFE76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0437BB8318B307B0000BFE76 /* AdLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdLibTests-Info.plist"; sourceTree = "<group>"; };
+		0437BB8518B307B0000BFE76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0437BB8718B307B0000BFE76 /* AdLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdLibTests.m; sourceTree = "<group>"; };
+		0441E19B18BF37890008025D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0441E19D18BF37DA0008025D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		044E7F2C1915DD8B00370756 /* PYInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialView.h; sourceTree = "<group>"; };
+		044E7F2D1915DD8B00370756 /* PYInterstitialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYInterstitialView.m; sourceTree = "<group>"; };
+		044E7F2F1915E2AD00370756 /* PYInterstitialViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYInterstitialViewDelegate.h; sourceTree = "<group>"; };
+		046FEC7318BC3B2F00106E19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04C1597718C056480067F94C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		04C1597918C061180067F94C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04C3A1C218EE46B2007DD4C1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04C3A1C418EE46CC007DD4C1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		04C3A1C618EE46D8007DD4C1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		04C3A1C818EE46ED007DD4C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		04C3A1CA18EE4C7B007DD4C1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		04D04E1F18BEEC2900430FEA /* PYJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJSONDeserializer.h; sourceTree = "<group>"; };
+		04D04E2018BEEC2900430FEA /* PYJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSONDeserializer.m; sourceTree = "<group>"; };
+		04D04E2118BEEC2900430FEA /* PYJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJSONSerializer.h; sourceTree = "<group>"; };
+		04D04E2218BEEC2900430FEA /* PYJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSONSerializer.m; sourceTree = "<group>"; };
+		04D04E2318BEEC2900430FEA /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		04D04E3618BF21CF00430FEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04D2C73C18F77FDD0036C159 /* PYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerView.h; sourceTree = "<group>"; };
+		04D2C73D18F77FDD0036C159 /* PYBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYBannerView.m; sourceTree = "<group>"; };
+		04D2C73E18F77FDD0036C159 /* PYBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerViewDelegate.h; sourceTree = "<group>"; };
+		04D2C73F18F77FDD0036C159 /* PYBannerViewType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerViewType.h; sourceTree = "<group>"; };
+		04D2C74118F77FDD0036C159 /* PYAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAdRequest.h; sourceTree = "<group>"; };
+		04D2C74218F77FDD0036C159 /* PYAdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAdRequest.m; sourceTree = "<group>"; };
+		04D2C74318F77FDD0036C159 /* PYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYModel.h; sourceTree = "<group>"; };
+		04D2C74418F77FDD0036C159 /* PYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYModel.m; sourceTree = "<group>"; };
+		04D2C74518F77FDD0036C159 /* PYModelRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYModelRequest.h; sourceTree = "<group>"; };
+		04D2C74618F77FDD0036C159 /* PYModelRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYModelRequest.m; sourceTree = "<group>"; };
+		04D2C75118F77FDD0036C159 /* PYAdUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAdUtility.h; sourceTree = "<group>"; };
+		04D2C75218F77FDD0036C159 /* PYAdUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAdUtility.m; sourceTree = "<group>"; };
+		04D2C75318F77FDD0036C159 /* PYAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAppManager.h; sourceTree = "<group>"; };
+		04D2C75418F77FDD0036C159 /* PYAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAppManager.m; sourceTree = "<group>"; };
+		04D2C75518F77FDD0036C159 /* PYImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImageManager.h; sourceTree = "<group>"; };
+		04D2C75618F77FDD0036C159 /* PYImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYImageManager.m; sourceTree = "<group>"; };
+		04D2C75718F77FDD0036C159 /* PYLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYLocationManager.h; sourceTree = "<group>"; };
+		04D2C75818F77FDD0036C159 /* PYLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLocationManager.m; sourceTree = "<group>"; };
+		04D2C75918F77FDD0036C159 /* PYOfflineSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYOfflineSyncManager.h; sourceTree = "<group>"; };
+		04D2C75A18F77FDD0036C159 /* PYOfflineSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYOfflineSyncManager.m; sourceTree = "<group>"; };
+		04D2C75B18F77FDD0036C159 /* PYProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYProcess.h; sourceTree = "<group>"; };
+		04D2C75C18F77FDD0036C159 /* PYProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYProcess.m; sourceTree = "<group>"; };
+		04D7BFCD18D929410038F784 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04D7BFCF18D92B370038F784 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		69EFE9221ABC0C7300942253 /* PYAVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAVPlayerView.h; sourceTree = "<group>"; };
+		69EFE9231ABC0C7300942253 /* PYAVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAVPlayerView.m; sourceTree = "<group>"; };
+		95C185F71936FA2D00D27231 /* PYStartupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYStartupView.h; sourceTree = "<group>"; };
+		95C185F81936FA2D00D27231 /* PYStartupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYStartupView.m; sourceTree = "<group>"; };
+		95C185FD1937005E00D27231 /* PYStartupViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYStartupViewDelegate.h; sourceTree = "<group>"; };
+		95CE128A192DE4BE00E32AE5 /* AppInfoCollect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfoCollect.h; path = ../AppInfoCollect.h; sourceTree = "<group>"; };
+		95CE128B192DE4BE00E32AE5 /* AppInfoCollect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfoCollect.m; path = ../AppInfoCollect.m; sourceTree = "<group>"; };
+		95DB50E018FE5F6200D7EADF /* PYConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYConversion.h; sourceTree = "<group>"; };
+		95DB50E118FE5F6200D7EADF /* PYConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYConversion.m; sourceTree = "<group>"; };
+		EFDFC7DA19C18639005AB493 /* OpenFingerPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenFingerPrint.h; sourceTree = "<group>"; };
+		EFDFC7DB19C18639005AB493 /* OpenFingerPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenFingerPrint.m; sourceTree = "<group>"; };
+		EFF9326B1ADFA9B300DCC10E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0437BB6518B307B0000BFE76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF9326C1ADFA9B300DCC10E /* UIKit.framework in Frameworks */,
+				04C3A1CE18EE4CC1007DD4C1 /* libsqlite3.0.dylib in Frameworks */,
+				04C3A1C918EE46ED007DD4C1 /* MobileCoreServices.framework in Frameworks */,
+				04C3A1C718EE46D8007DD4C1 /* CFNetwork.framework in Frameworks */,
+				04C3A1C318EE46B2007DD4C1 /* libz.dylib in Frameworks */,
+				04D7BFD018D92B370038F784 /* AdSupport.framework in Frameworks */,
+				04D7BFCE18D929410038F784 /* Foundation.framework in Frameworks */,
+				04C1597A18C061180067F94C /* CoreLocation.framework in Frameworks */,
+				04C1597818C056480067F94C /* CoreTelephony.framework in Frameworks */,
+				0441E1A118BF38110008025D /* CoreGraphics.framework in Frameworks */,
+				0441E19C18BF37890008025D /* ImageIO.framework in Frameworks */,
+				04D04E3718BF21CF00430FEA /* SystemConfiguration.framework in Frameworks */,
+				046FEC7418BC3B2F00106E19 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041F489318CFF310006AF85F /* Pinyou */ = {
+			isa = PBXGroup;
+			children = (
+				041F489418CFF310006AF85F /* Supporting Files */,
+			);
+			path = Pinyou;
+			sourceTree = "<group>";
+		};
+		041F489418CFF310006AF85F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041F489518CFF310006AF85F /* Pinyou-Info.plist */,
+				041F489618CFF310006AF85F /* InfoPlist.strings */,
+				041F489918CFF310006AF85F /* Pinyou-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0437BB5F18B307B0000BFE76 = {
+			isa = PBXGroup;
+			children = (
+				EFDFC7D919C18639005AB493 /* OpenFingerPrint */,
+				0437BB6D18B307B0000BFE76 /* AdLib */,
+				0437BB8118B307B0000BFE76 /* AdLibTests */,
+				041F489318CFF310006AF85F /* Pinyou */,
+				0437BB6A18B307B0000BFE76 /* Frameworks */,
+				0437BB6918B307B0000BFE76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0437BB6918B307B0000BFE76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0437BB6818B307B0000BFE76 /* libPinyou.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0437BB6A18B307B0000BFE76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF9326B1ADFA9B300DCC10E /* UIKit.framework */,
+				04C3A1CA18EE4C7B007DD4C1 /* libsqlite3.dylib */,
+				04C3A1C818EE46ED007DD4C1 /* MobileCoreServices.framework */,
+				04C3A1C618EE46D8007DD4C1 /* CFNetwork.framework */,
+				04C3A1C418EE46CC007DD4C1 /* libsqlite3.0.dylib */,
+				04C3A1C218EE46B2007DD4C1 /* libz.dylib */,
+				04D7BFCF18D92B370038F784 /* AdSupport.framework */,
+				04D7BFCD18D929410038F784 /* Foundation.framework */,
+				04C1597918C061180067F94C /* CoreLocation.framework */,
+				04C1597718C056480067F94C /* CoreTelephony.framework */,
+				0441E19D18BF37DA0008025D /* CoreGraphics.framework */,
+				0441E19B18BF37890008025D /* ImageIO.framework */,
+				04D04E3618BF21CF00430FEA /* SystemConfiguration.framework */,
+				046FEC7318BC3B2F00106E19 /* QuartzCore.framework */,
+				0437BB7918B307B0000BFE76 /* XCTest.framework */,
+				0437BB7C18B307B0000BFE76 /* UIKit.framework */,
+				041F489118CFF310006AF85F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0437BB6D18B307B0000BFE76 /* AdLib */ = {
+			isa = PBXGroup;
+			children = (
+				04D04E1E18BEEC2900430FEA /* JSON */,
+				95C185F61936F9F400D27231 /* Startup */,
+				9518B9C61923246F00E5D58E /* conversion */,
+				9518B9C5192323FA00E5D58E /* Interstitial */,
+				041F488818CFEED2006AF85F /* Pinyou.bundle */,
+				0437BB7018B307B0000BFE76 /* Pinyou.h */,
+				0437BB7218B307B0000BFE76 /* Pinyou.m */,
+				04D2C73B18F77FDD0036C159 /* Banner */,
+				04D2C74018F77FDD0036C159 /* Model */,
+				04D2C75018F77FDD0036C159 /* Utility */,
+				0437BB6E18B307B0000BFE76 /* Supporting Files */,
+			);
+			path = AdLib;
+			sourceTree = "<group>";
+		};
+		0437BB6E18B307B0000BFE76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0437BB6F18B307B0000BFE76 /* AdLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0437BB8118B307B0000BFE76 /* AdLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				0437BB8718B307B0000BFE76 /* AdLibTests.m */,
+				0437BB8218B307B0000BFE76 /* Supporting Files */,
+			);
+			path = AdLibTests;
+			sourceTree = "<group>";
+		};
+		0437BB8218B307B0000BFE76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0437BB8318B307B0000BFE76 /* AdLibTests-Info.plist */,
+				0437BB8418B307B0000BFE76 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04D04E1E18BEEC2900430FEA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				04D04E1F18BEEC2900430FEA /* PYJSONDeserializer.h */,
+				04D04E2018BEEC2900430FEA /* PYJSONDeserializer.m */,
+				04D04E2118BEEC2900430FEA /* PYJSONSerializer.h */,
+				04D04E2218BEEC2900430FEA /* PYJSONSerializer.m */,
+				04D04E2318BEEC2900430FEA /* JSONRepresentation.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		04D2C73B18F77FDD0036C159 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				04D2C73C18F77FDD0036C159 /* PYBannerView.h */,
+				04D2C73D18F77FDD0036C159 /* PYBannerView.m */,
+				04D2C73E18F77FDD0036C159 /* PYBannerViewDelegate.h */,
+				04D2C73F18F77FDD0036C159 /* PYBannerViewType.h */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		04D2C74018F77FDD0036C159 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95CE128A192DE4BE00E32AE5 /* AppInfoCollect.h */,
+				95CE128B192DE4BE00E32AE5 /* AppInfoCollect.m */,
+				04D2C74118F77FDD0036C159 /* PYAdRequest.h */,
+				04D2C74218F77FDD0036C159 /* PYAdRequest.m */,
+				04D2C74318F77FDD0036C159 /* PYModel.h */,
+				04D2C74418F77FDD0036C159 /* PYModel.m */,
+				04D2C74518F77FDD0036C159 /* PYModelRequest.h */,
+				04D2C74618F77FDD0036C159 /* PYModelRequest.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04D2C75018F77FDD0036C159 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04D2C75118F77FDD0036C159 /* PYAdUtility.h */,
+				04D2C75218F77FDD0036C159 /* PYAdUtility.m */,
+				04D2C75318F77FDD0036C159 /* PYAppManager.h */,
+				04D2C75418F77FDD0036C159 /* PYAppManager.m */,
+				04D2C75518F77FDD0036C159 /* PYImageManager.h */,
+				04D2C75618F77FDD0036C159 /* PYImageManager.m */,
+				04D2C75718F77FDD0036C159 /* PYLocationManager.h */,
+				04D2C75818F77FDD0036C159 /* PYLocationManager.m */,
+				04D2C75918F77FDD0036C159 /* PYOfflineSyncManager.h */,
+				04D2C75A18F77FDD0036C159 /* PYOfflineSyncManager.m */,
+				04D2C75B18F77FDD0036C159 /* PYProcess.h */,
+				04D2C75C18F77FDD0036C159 /* PYProcess.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9518B9C5192323FA00E5D58E /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				044E7F2C1915DD8B00370756 /* PYInterstitialView.h */,
+				044E7F2D1915DD8B00370756 /* PYInterstitialView.m */,
+				69EFE9221ABC0C7300942253 /* PYAVPlayerView.h */,
+				69EFE9231ABC0C7300942253 /* PYAVPlayerView.m */,
+				044E7F2F1915E2AD00370756 /* PYInterstitialViewDelegate.h */,
+			);
+			name = Interstitial;
+			sourceTree = "<group>";
+		};
+		9518B9C61923246F00E5D58E /* conversion */ = {
+			isa = PBXGroup;
+			children = (
+				95DB50E018FE5F6200D7EADF /* PYConversion.h */,
+				95DB50E118FE5F6200D7EADF /* PYConversion.m */,
+			);
+			name = conversion;
+			sourceTree = "<group>";
+		};
+		95C185F61936F9F400D27231 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				95C185F71936FA2D00D27231 /* PYStartupView.h */,
+				95C185F81936FA2D00D27231 /* PYStartupView.m */,
+				95C185FD1937005E00D27231 /* PYStartupViewDelegate.h */,
+			);
+			name = Startup;
+			sourceTree = "<group>";
+		};
+		EFDFC7D919C18639005AB493 /* OpenFingerPrint */ = {
+			isa = PBXGroup;
+			children = (
+				EFDFC7DA19C18639005AB493 /* OpenFingerPrint.h */,
+				EFDFC7DB19C18639005AB493 /* OpenFingerPrint.m */,
+			);
+			name = OpenFingerPrint;
+			path = AdLib/OpenFingerPrint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95C185FE193721A700D27231 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69EFE9241ABC0C7300942253 /* PYAVPlayerView.h in Headers */,
+				EFDFC7DC19C18639005AB493 /* OpenFingerPrint.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0437BB6718B307B0000BFE76 /* AdLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0437BB8B18B307B0000BFE76 /* Build configuration list for PBXNativeTarget "AdLib" */;
+			buildPhases = (
+				0437BB6418B307B0000BFE76 /* Sources */,
+				0437BB6518B307B0000BFE76 /* Frameworks */,
+				0437BB6618B307B0000BFE76 /* Copy Files */,
+				04EB3B5318B7251A00993B0E /* Run Script */,
+				95C185FE193721A700D27231 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdLib;
+			productName = AdLib;
+			productReference = 0437BB6818B307B0000BFE76 /* libPinyou.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0437BB6018B307B0000BFE76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = lide;
+			};
+			buildConfigurationList = 0437BB6318B307B0000BFE76 /* Build configuration list for PBXProject "AdLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0437BB5F18B307B0000BFE76;
+			productRefGroup = 0437BB6918B307B0000BFE76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0437BB6718B307B0000BFE76 /* AdLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04EB3B5318B7251A00993B0E /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0437BB6418B307B0000BFE76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D2C76718F77FDD0036C159 /* PYImageManager.m in Sources */,
+				690152761A7F1805003F030E /* PYJSONDeserializer.m in Sources */,
+				04D2C76018F77FDD0036C159 /* PYModelRequest.m in Sources */,
+				04D2C76918F77FDD0036C159 /* PYOfflineSyncManager.m in Sources */,
+				04D2C76A18F77FDD0036C159 /* PYProcess.m in Sources */,
+				0437BB9118B30806000BFE76 /* Pinyou.m in Sources */,
+				04D2C75D18F77FDD0036C159 /* PYBannerView.m in Sources */,
+				04D2C76818F77FDD0036C159 /* PYLocationManager.m in Sources */,
+				EFDFC7DD19C18639005AB493 /* OpenFingerPrint.m in Sources */,
+				04D04E2718BEEC2900430FEA /* PYJSONSerializer.m in Sources */,
+				95C185F91936FA2D00D27231 /* PYStartupView.m in Sources */,
+				04D2C75F18F77FDD0036C159 /* PYModel.m in Sources */,
+				95CE128C192DE4BE00E32AE5 /* AppInfoCollect.m in Sources */,
+				04D2C75E18F77FDD0036C159 /* PYAdRequest.m in Sources */,
+				69EFE9251ABC0C7300942253 /* PYAVPlayerView.m in Sources */,
+				04D2C76518F77FDD0036C159 /* PYAdUtility.m in Sources */,
+				04D2C76618F77FDD0036C159 /* PYAppManager.m in Sources */,
+				95DB50E218FE5F6200D7EADF /* PYConversion.m in Sources */,
+				044E7F2E1915DD8B00370756 /* PYInterstitialView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		041F489618CFF310006AF85F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041F489718CFF310006AF85F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0437BB8418B307B0000BFE76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0437BB8518B307B0000BFE76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0437BB8918B307B0000BFE76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wu jun (GZ8B8PT4P3)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		0437BB8A18B307B0000BFE76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wu jun (GZ8B8PT4P3)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		0437BB8C18B307B0000BFE76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = NO;
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/AdLib.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lide/Development/AdLibDemo/AdLib/AdLib,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdLib/AdLib-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Pinyou;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		0437BB8D18B307B0000BFE76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = NO;
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/AdLib.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lide/Development/AdLibDemo/AdLib/AdLib,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdLib/AdLib-Prefix.pch";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Pinyou;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0437BB6318B307B0000BFE76 /* Build configuration list for PBXProject "AdLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0437BB8918B307B0000BFE76 /* Debug */,
+				0437BB8A18B307B0000BFE76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0437BB8B18B307B0000BFE76 /* Build configuration list for PBXNativeTarget "AdLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0437BB8C18B307B0000BFE76 /* Debug */,
+				0437BB8D18B307B0000BFE76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0437BB6018B307B0000BFE76 /* Project object */;
+}

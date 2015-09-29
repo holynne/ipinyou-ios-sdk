@@ -1,0 +1,24 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+    #define kAnimationDurationDefault   0.35
+    #define kPinYouSDKVersionString     @"0.8"
+
+    #define PY_SAFE_RELEASE(X)  [X release]; X = nil;
+    #define PY_VIEW_RELEASE(X)  [X removeFromSuperview]; [X release]; X = nil;
+
+//    #ifdef DEBUG
+//    #define NSLog(format, ...) NSLog(format, ## __VA_ARGS__)
+//    #else
+//    #define NSLog(format, ...)
+//    #endif
+
+#endif

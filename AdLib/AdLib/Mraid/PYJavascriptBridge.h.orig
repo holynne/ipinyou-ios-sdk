@@ -1,0 +1,113 @@
+//
+//  PYJavascriptBridge.h
+//  AdLib
+//
+//  Created by lide on 14-4-2.
+//  Copyright (c) 2014年 lide. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreMotion/CoreMotion.h>
+#import "PinyouReachability.h"
+
+@protocol PYJavascriptBridgeDelegate;
+
+@interface PYJavascriptBridge : NSObject <UIAccelerometerDelegate, CLLocationManagerDelegate>
+{
+    id<PYJavascriptBridgeDelegate>  _delegate;
+    CLLocationManager   *_locationManager;
+    CMMotionManager     *_motionManager;
+    UIAccelerometer     *_accelerometer;
+    NSTimer             *_timer;
+    
+    BOOL        _accelerometerEnableCount;
+	BOOL        _compassEnableCount;
+	BOOL        _gyroscopeEnableCount;
+	BOOL        _locationEnableCount;
+	
+	BOOL        _processAccelerometer;
+	BOOL        _processShake;
+    CGFloat     _shakeIntensity;
+}
+
+@property (assign, nonatomic) id<PYJavascriptBridgeDelegate> delegate;
+
+- (NSString *)networkStatus;
+- (BOOL)processURL:(NSURL *)url forWebView:(UIWebView *)webView;
+
+- (void)restoreServicesToDefaultState;
+
+@end
+
+@protocol PYJavascriptBridgeDelegate <NSObject>
+
+@required
+
+@property (nonatomic, assign, readonly) UIWebView *webView;
+
+- (NSString *)usingWebView:(UIWebView *)webView
+		 executeJavascript:(NSString *)javascript, ...;
+
+- (void)adIsMraidEnabledForWebView:(UIWebView *)webView;
+
+- (void)showAd:(UIWebView *)webView;
+- (void)hideAd:(UIWebView *)webView;
+
+- (void)closeAd:(UIWebView *)webView;
+
+- (void)expandTo:(CGRect)newFrame
+		 withURL:(NSURL *)url
+	   inWebView:(UIWebView *)webView
+   blockingColor:(UIColor *)blockingColor
+ blockingOpacity:(CGFloat)blockingOpacity
+ lockOrientation:(BOOL)allowOrientationChange;
+
+- (void)openBrowser:(UIWebView *)webView
+	  withUrlString:(NSString *)urlString
+		 enableBack:(BOOL)back
+	  enableForward:(BOOL)forward
+	  enableRefresh:(BOOL)refresh;
+
+- (void)openMap:(UIWebView *)webView
+  withUrlString:(NSString *)urlString
+  andFullScreen:(BOOL)fullscreen;
+
+- (void)playAudio:(UIWebView *)webView
+    withUrlString:(NSString *)urlString
+         autoPlay:(BOOL)autoplay
+         controls:(BOOL)controls
+             loop:(BOOL)loop
+         position:(BOOL)position
+       startStyle:(NSString *)startStyle
+        stopStyle:(NSString *)stopStyle;
+
+- (void)playVideo:(UIWebView *)webView
+    withUrlString:(NSString *)urlString
+       audioMuted:(BOOL)mutedAudio
+         autoPlay:(BOOL)autoplay
+         controls:(BOOL)controls
+             loop:(BOOL)loop
+         position:(int[4]) pos
+       startStyle:(NSString *)startStyle
+        stopStyle:(NSString *)stopStyle;
+
+- (void)addEventToCalenderForDate:(NSDate *)date
+						withTitle:(NSString *)title
+						 withBody:(NSString *)body;
+
+- (void)sendEMailTo:(NSString *)to
+		withSubject:(NSString *)subject
+		   withBody:(NSString *)body
+			 isHTML:(BOOL)html;
+
+- (void)placeCallTo:(NSString *)phoneNumber;
+
+- (void)sendSMSTo:(NSString *)to
+		 withBody:(NSString *)body;
+
+- (CGRect)getAdFrameInWindowCoordinates;
+- (void)rotateExpandedWindowsToCurrentOrientation;
+- (CGRect)rectAccordingToOrientation:(CGRect)rect;
+
+@end
